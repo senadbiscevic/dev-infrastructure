@@ -24,3 +24,11 @@ CREATE SCHEMA IF NOT EXISTS powerbi;
 -- Connect to vaitask and enable extensions
 \c vaitask
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- Create rivertigo databases
+CREATE DATABASE rivertigo;
+CREATE DATABASE rivertigo_hangfire;
+
+-- Connect to rivertigo and enable extensions
+\c rivertigo
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
